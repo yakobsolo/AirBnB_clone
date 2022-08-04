@@ -7,12 +7,22 @@ import datetime
 
 class BaseModel(object):
     """ define all common attribute/methods """
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         """
+        attribute initialization of all the instances of BaseModel
         """
-        self.id = str(uuid4())
-        self.created_at = datetime.datetime.today()
-        self.updated_at = self.created_at
+        if kwargs:
+            self.updated_at = datetime.datetime.\
+                strptime(kwargs['updated_at'], '%Y-%m-%dT%H:%M:%S.%f')
+            self.created_at = datetime.datetime.\
+                strptime(kwargs['created_at'], '%Y-%m-%dT%H:%M:%S.%f')
+            for k, v in kwargs.items():
+                if k not in ['updated_at', 'created_at', '__class__']:
+                    self.__setattr__(k, v)
+        else:
+            self.id = str(uuid4())
+            self.created_at = datetime.datetime.today()
+            self.updated_at = self.created_at
 
     def __str__(self):
         """
