@@ -23,6 +23,7 @@ class BaseModel(object):
             self.id = str(uuid4())
             self.created_at = datetime.datetime.today()
             self.updated_at = self.created_at
+            models.storage.new(self)
 
     def __str__(self):
         """
@@ -37,6 +38,7 @@ class BaseModel(object):
         updates the public instance attribute updated_at
         """
         self.updated_at = datetime.datetime.today()
+        models.storage.save()
 
     def to_dict(self):
         """
