@@ -17,9 +17,15 @@ class HBNBCommand(cmd.Cmd):
     command line interpretor using cmd
     """
     prompt = "(hbnb) "
-    cls = {"BaseModel": BaseModel, "User": User,
-            "State": State, "City": City, "Amenity": Amenity,
-            "Place": Place, "Review": Review}
+    cls_all = {
+            "BaseModel": BaseModel,
+            "User": User,
+            "State": State,
+            "City": City,
+            "Amenity": Amenity,
+            "Place": Place,
+            "Review": Review
+            }
 
     def do_EOF(self, line):
         """end of a line
@@ -44,10 +50,10 @@ class HBNBCommand(cmd.Cmd):
         """
         if len(line) == 0:
             print("** class name missing **")
-        elif line not in HBNBCommand.cls.keys():
+        elif line not in HBNBCommand.cls_all.keys():
             print("** class doesn't exist **")
         else:
-            obj1 = HBNBCommand.cls[line]()
+            obj1 = HBNBCommand.cls_all[line]()
             obj1.save()
             print(obj1.id)
 
@@ -59,7 +65,7 @@ class HBNBCommand(cmd.Cmd):
         if len(line) == 0:
             print("** class name missing **")
             return
-        elif list_of_line[0] not in HBNBCommand.cls.keys():
+        elif list_of_line[0] not in HBNBCommand.cls_all.keys():
             print("** class doesn't exist **")
             return
         elif len(list_of_line) == 1:
@@ -82,7 +88,7 @@ class HBNBCommand(cmd.Cmd):
         if len(line) == 0:
             print("** class name missing **")
             return
-        elif list_of_line[0] not in HBNBCommand.cls.keys():
+        elif list_of_line[0] not in HBNBCommand.cls_all.keys():
             print("** class doesn't exist **")
             return
         elif len(list_of_line) == 1:
@@ -131,7 +137,7 @@ class HBNBCommand(cmd.Cmd):
         if len(line) == 0:
             print("** class name missing **")
             return
-        elif list_of_line[0] not in HBNBCommand.cls.keys():
+        elif list_of_line[0] not in HBNBCommand.cls_all.keys():
             print("** class doesn't exist **")
             return
         elif len(list_of_line) == 1:
