@@ -2,6 +2,7 @@
 """ file_storage.py - FileStorage """
 import json
 from models.base_model import BaseModel
+from models.user import User
 
 
 class FileStorage():
@@ -11,7 +12,8 @@ class FileStorage():
     """
     __file_path = "file.json"
     __objects = {}
-    clas = {"BaseModel": BaseModel}
+    clas = {"BaseModel": BaseModel,
+            "User": User}
 
     def all(self):
         """
