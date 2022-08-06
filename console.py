@@ -11,7 +11,8 @@ class HBNBCommand(cmd.Cmd):
     command line interpretor using cmd
     """
     prompt = "(hbnb) "
-    cls = {"BaseModel": BaseModel}
+    cls = {"BaseModel": BaseModel
+            "User" : User}
 
     def do_EOF(self, line):
         """end of a line
