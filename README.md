@@ -28,4 +28,11 @@ This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.
 *Run hbnb(interactively): `./console` and enter command
 *Run hbnb(non-interactively): `echo "<command>" | ./console.py`
 
-
+## File Descriptions
+[console.py](console.py) - the console contains the entry point of the command interpreter. 
+List of commands this console current supports:
+* `EOF` - exits console
+* `quit` - exits console
+* `create` - Creates a new instance of`BaseModel`, saves it (to the JSON file) and prints the id
+* `destroy` - Deletes an instance based on the class name and id (save the change into the JSON file).
+* `all` - Prints all string representation of all instances based or not on the class name.
