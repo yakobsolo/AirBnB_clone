@@ -44,3 +44,7 @@ vagrantAirBnB_clone$./console.py
 Documented commands (type help <topic>):
 ========================================
 EOF  all  create  destroy  help  quit  show  update
+
+## Bugs
+No known bugs at this time.
+
