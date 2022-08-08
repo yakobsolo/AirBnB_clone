@@ -53,3 +53,6 @@ No known bugs at this time.
 * Yakob Solomon [Github](https://github.com/yakobsolo) || [Gmail](yakisolo2009@gmail.com)
 * Mubarek Hussen [Github](https://github.com/MubarekHussen) || [Linkedin](https://www.linkedin.com/in/mubarek-hussen-142694228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdXqppMkOSaqMNSMV835hRg%3D%3D)
 
+
+## License
+Public Domain. No copy write protection.
