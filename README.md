@@ -36,3 +36,7 @@ List of commands this console current supports:
 * `create` - Creates a new instance of`BaseModel`, saves it (to the JSON file) and prints the id
 * `destroy` - Deletes an instance based on the class name and id (save the change into the JSON file).
 * `all` - Prints all string representation of all instances based or not on the class name.
+
+## Examples of use
+vagrantAirBnB_clone$./console.py
+(hbnb) help
