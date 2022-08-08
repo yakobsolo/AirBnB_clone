@@ -40,3 +40,7 @@ List of commands this console current supports:
 ## Examples of use
 vagrantAirBnB_clone$./console.py
 (hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  all  create  destroy  help  quit  show  update
