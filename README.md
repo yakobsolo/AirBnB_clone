@@ -10,3 +10,13 @@ The console is the first segment of the AirBnB project at Holberton School that 
 *Update attributes of an object
 *Destroy an object
 
+## Table of Content
+*[Environment](#environment)
+*[File Descriptions](#file-descriptions)
+*[Usage](#usage)
+*[Examples of use](#examples-of-use)
+*[Bugs](#bugs)
+*[Authors](#authors)
+*[License](#license)
+
+
