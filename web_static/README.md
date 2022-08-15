@@ -1,1 +1,2 @@
-web statics
+# welcome to single web page of airbnb clone
+
